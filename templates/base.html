@@ -6,8 +6,11 @@
   <title>{% block title %} Instagram Trending Tags! {% endblock %}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" 
+        type="image/x-icon">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
   <link rel="stylesheet" 
-        href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        href="http://bootswatch.com/cerulean/bootstrap.min.css" />
   <link rel="stylesheet" 
         href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" />
   {% block css %}{% endblock css %}

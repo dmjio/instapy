@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block css %}
+  <style type="text/css" media="screen"> #bigbut {  width : 500px; height: 100px; } </style>
+{% endblock %}
 {% block content %}
 <div class="container">
   <div class="header">
@@ -16,7 +19,7 @@
       {% endfor %}
     </p>
     <hr />
-    <button class="btn btn-success btn-large">Copy</button>
+    <button id="bigbut" class="btn btn-success btn-large">Copy</button>
   </div>
   <div class="footer">
     <p>&copy; Top Instagram Trending Hash Tags 2013</p>

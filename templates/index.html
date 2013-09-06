@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right"> 
+      <li class="active">
+        <a href="{{ url_for('home') }}">Home</a>
+      </li>
+    </ul>
+    <h3 class="text-muted">Trending Instagram Tags!</h3>
+  </div>
+  <div class="jumbotron">
+    <h1>Top tags</h1>
+    <p class="lead">
+      {% for i in tags %}
+      {{ i }}
+      {% endfor %}
+    </p>
+  </div>
+  <div class="footer">
+    <p>&copy; Top Instagram Trending Hash Tags 2013</p>
+  </div>
+</div>
+{% endblock content %}
